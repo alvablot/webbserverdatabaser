@@ -20,17 +20,13 @@ const newCustomer = [
     },
   },
 ];
-function parseJson(data) {
-  const convData = JSON.parse(data);
-  return convData;
-}
 
 fs.readFile("./customers.json", (error, data) => {
   if (error) {
     console.log("Filen kunde inte öppnas");
     return;
   }
-  data = parseJson(data);
+  data = JSON.parse(data);
   data.customers.push(newCustomer);
   const newJson = JSON.stringify(data)
 
