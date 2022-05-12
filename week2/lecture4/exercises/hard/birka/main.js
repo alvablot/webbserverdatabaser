@@ -29,8 +29,9 @@ fs.createReadStream("BirkakorsetData.csv", { encoding: "utf-8" })
   })
   .on("end", () => {
     console.log(`Alla dagar ${result.length / 24}`);
-    console.log(`Bra dagar ${good}`);
-    /*console.log(`Medel dagar ${everage.length}`);
+    //console.log(`${result}`);
+   /* console.log(`Bra dagar ${good.length}`);
+    console.log(`Medel dagar ${everage.length}`);
     console.log(`Dåliga dagar ${bad.length}`);
     console.log(`Mycket dåliga dagar ${veryBad.length}`);
     console.log(`Extremt dåliga dagar ${extremelyBad.length}`);*/
