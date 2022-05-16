@@ -2,8 +2,13 @@ const http = require("http");
 const fs = require("fs");
 const port = 5000;
 let people = [{}];
-const documentStart = "<html><head><meta charset='UTF-8'></head><body>";
-const documentEnd = "</body></html>";
+const documentStart = `<html>
+    <head>
+        <meta charset='UTF-8'>
+    </head>
+    <body>`;
+const documentEnd = `</body>
+</html>`;
 
 const days = [
   "Söndag",
@@ -23,7 +28,7 @@ const months = [
   "juni",
   "juli",
   "augusti",
-  "septemner",
+  "september",
   "oktober",
   "november",
   "december",
@@ -35,7 +40,7 @@ function getDateStamp() {
   const day = now.getDay();
   const date = now.getDate();
   const hour = now.getHours();
-  let minute = now.getHours();
+  let minute = now.getMinutes();
   if (minute < 10) minute = "0" + minute;
   let second = now.getSeconds();
   if (second < 10) second = "0" + second;
@@ -72,25 +77,73 @@ const server = http.createServer((req, res) => {
   }
 
   if (items[1] === "api" && items[2] === "persons" && items[3]) {
-    if (oId === undefined) {
-      res.statusCode = 404;
-    } else {
-      res.statusCode = 200;
-      res.setHeader("Content-Type", "text/html");
-      res.write(documentStart);
-      res.write(`
-            <h1>Person</h1>
-            `);
-      res.write(`
-        <p>${oId}</p>
-        <p>${oName}</p>
-        <p>${oNumber}</p>
-        <p>${getDateStamp()}</p>
-      `);
-      res.write(documentEnd);
+    // && items[3] && req.method === "GET") {
+    if (items[3] && req.method === "GET") {
+      if (oId === undefined) {
+        res.statusCode = 404;
+      } else {
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/html");
+        res.write(documentStart);
+        res.write(`
+            <h1>Person</h1>`);
+        res.write(`
+            <p>${oId}</p>
+            <p>${oName}</p>
+            <p>${oNumber}</p>
+            <p>${getDateStamp()}</p>
+        `);
+        res.write(documentEnd);
+      }
     }
-  }
-  if (items[1] === "info") {
+    if (req.method === "POST") {
+      // Här kanske vi vill ha lite logik
+      res.statusCode = 201;
+      req.on("data", (chunk) => {
+        //console.log(chunk.toString());
+        const data = chunk.toString();
+        const newPerson = JSON.parse(data);
+        people.forEach((element, i) => {
+          if (newPerson.id === element.id) {
+            res.statusCode = 409;
+            console.log(`ID ${element.id} finns redan`);
+          }
+          if (newPerson.name === element.name) {
+            res.statusCode = 409;
+            console.log(`Namn ${element.name} finns redan`);
+          }
+        });
+        if (res.statusCode !== 409) {
+          people.push(newPerson);
+
+          const newJson = JSON.stringify(people, null, 2);
+
+          fs.writeFile("./people.json", newJson, (err) => {
+            if (err) throw err;
+            console.log("Added to people.json");
+          });
+        }
+      });
+    }
+    if (req.method === "DELETE") {
+      res.statusCode = 204;
+      people.forEach((element, i) => {
+        if (element.id === parseInt(items[3])) {
+          if (i == 0) people.splice(0, 1);
+          people.splice(i, i);
+          console.log(`Delete ${element.id}`);
+          console.log(`Delete ${element.name}`);
+
+          const stringifiedJson = JSON.stringify(people, null, 2);
+          fs.writeFile("./people.json", stringifiedJson, (err) => {
+            if (err) throw err;
+
+            console.log("Deleted from people.json");
+          });
+        }
+      });
+    }
+  } else if (items[1] === "info" && req.method === "GET") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
     res.write(documentStart);
@@ -103,58 +156,9 @@ const server = http.createServer((req, res) => {
      `);
     res.write(documentEnd);
   }
-  if (req.method === "POST") {
-    // Här kanske vi vill ha lite logik
-
-    req.on("data", (chunk) => {
-      //console.log(chunk.toString());
-      const data = chunk.toString();
-      const newPerson = JSON.parse(data);
-      people.forEach((element, i) => {
-        if (newPerson.id === element.id) {
-          res.statusCode = 409;
-          console.log(`ID ${element.id} finns redan`);
-        }
-        if (newPerson.name === element.name) {
-          res.statusCode = 409;
-          console.log(`Namn ${element.name} finns redan`);
-        }
-      });
-      if (res.statusCode !== 409) {
-        people.push(newPerson);
-
-        const newJson = JSON.stringify(people, null, 2);
-
-        fs.writeFile("./people.json", newJson, (error) => {
-          if (error) {
-            console.log("Filen kunde inte skrivas");
-            return;
-          }
-          console.log(data);
-        });
-        res.statusCode = 201;
-      }
-    });
-  } else if (req.method === "DELETE" && !isNaN(parseInt(items[3]))) {
-    people.forEach((element, i) => {
-      if (element.id === parseInt(items[3])) {
-        if (i == 0) people.splice(0, 1);
-        people.splice(i, i);
-        console.log(`Delete ${element.id}`);
-        console.log(`Delete ${element.name}`);
-
-        const stringifiedJson = JSON.stringify(people, null, 2);
-        fs.writeFile("./people.json", stringifiedJson, (err) => {
-          if (err) throw err;
-          console.log("Wrote to people.json");
-        });
-      }
-    });
-    res.statusCode = 201;
-  } else {
+  /*else {
     res.statusCode = 404;
-  }
-
+  }*/
   res.end();
 });
 
@@ -163,15 +167,15 @@ server.listen(port, () => {
 });
 
 /*
-
-    fetch("http://localhost:5000/info", {
+    const id = Math.round(Math.random() * 99999)
+    fetch("http://localhost:5000/api/persons/1", {
     method: "POST",
-    body: JSON.stringify({ id: 5, name: "Ryan Dahl", number: "666" }),
+    body: JSON.stringify({ id: id, name: "Ryan Dahl", number: "666" }),
     headers: { "Content-Type": "application/json" }
     })
 
 
-    fetch("http://localhost:5000/api/persons/1", {
+    fetch("http://localhost:5000/api/persons/5", {
     method: "DELETE"
     })
 
