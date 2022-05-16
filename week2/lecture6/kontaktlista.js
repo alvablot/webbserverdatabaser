@@ -40,7 +40,7 @@ function getDateStamp() {
   const day = now.getDay();
   const date = now.getDate();
   const hour = now.getHours();
-  let minute = now.getMinutes();
+  let minute = now.getHours();
   if (minute < 10) minute = "0" + minute;
   let second = now.getSeconds();
   if (second < 10) second = "0" + second;
@@ -78,7 +78,7 @@ const server = http.createServer((req, res) => {
 
   if (items[1] === "api" && items[2] === "persons" && items[3]) {
     // && items[3] && req.method === "GET") {
-    if (items[3] && req.method === "GET") {
+    if (req.method === "GET") {
       if (oId === undefined) {
         res.statusCode = 404;
       } else {
@@ -126,23 +126,24 @@ const server = http.createServer((req, res) => {
       });
     }
     if (req.method === "DELETE") {
-      res.statusCode = 204;
-      people.forEach((element, i) => {
-        if (element.id === parseInt(items[3])) {
-          if (i == 0) people.splice(0, 1);
-          people.splice(i, i);
-          console.log(`Delete ${element.id}`);
-          console.log(`Delete ${element.name}`);
-
-          const stringifiedJson = JSON.stringify(people, null, 2);
-          fs.writeFile("./people.json", stringifiedJson, (err) => {
-            if (err) throw err;
-
-            console.log("Deleted from people.json");
-          });
-        }
-      });
-    }
+        res.statusCode = 204;
+        people.forEach((element, i) => {
+          if (element.id === parseInt(items[3])) {
+            if (i == 0) people.splice(0, 1);
+            people.splice(i, i);
+            console.log(`Delete ${element.id}`);
+            console.log(`Delete ${element.name}`);
+    
+            const stringifiedJson = JSON.stringify(people, null, 2);
+            fs.writeFile("./people.json", stringifiedJson, (err) => {
+              if (err) throw err;
+              else {
+                console.log("Deleted from people.json");
+              }
+            });
+          }
+        });
+      }
   } else if (items[1] === "info" && req.method === "GET") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
@@ -155,10 +156,10 @@ const server = http.createServer((req, res) => {
         <p>${getDateStamp()}</p>
      `);
     res.write(documentEnd);
-  }
-  /*else {
+  } 
+ else {
     res.statusCode = 404;
-  }*/
+  }
   res.end();
 });
 
