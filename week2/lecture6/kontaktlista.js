@@ -106,21 +106,19 @@ const server = http.createServer((req, res) => {
       }
     }
     if (req.method === "POST") {
-      //res.statusCode = 201;
+      res.statusCode = 201;
       req.on("data", (chunk) => {
         //console.log(chunk.toString());
         const data = chunk.toString(); // Behövs inte
         const newPerson = JSON.parse(data);
         people.forEach((element, i) => {
-         if (newPerson.id === element.id) {
+          if (newPerson.id === element.id) {
             res.statusCode = 409;
             console.log(`ID ${element.id} finns redan`);
-            res.end();
           }
           if (newPerson.name === element.name) {
             res.statusCode = 409;
             console.log(`Namn ${element.name} finns redan`);
-            res.end();
           }
         });
         if (res.statusCode !== 409) {
@@ -168,7 +166,7 @@ const server = http.createServer((req, res) => {
   } else {
     res.statusCode = 404;
   }
-  //res.end();
+  res.end();
 });
 
 server.listen(port, () => {
