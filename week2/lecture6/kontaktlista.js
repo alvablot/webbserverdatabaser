@@ -77,7 +77,7 @@ const server = http.createServer((req, res) => {
   }
 
   if (items[1] === "api" && items[2] === "persons" && items[3]) {
-    // && items[3] && req.method === "GET") {
+
     if (req.method === "GET") {
       if (oId === undefined) {
         res.statusCode = 404;
@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
       }
     }
     if (req.method === "POST") {
-      // Här kanske vi vill ha lite logik
+
       res.statusCode = 201;
       req.on("data", (chunk) => {
         //console.log(chunk.toString());
