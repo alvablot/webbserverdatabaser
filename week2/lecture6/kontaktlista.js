@@ -40,7 +40,7 @@ function getDateStamp() {
   const day = now.getDay();
   const date = now.getDate();
   const hour = now.getHours();
-  let minute = now.getHours();
+  let minute = now.getMinutes();
   if (minute < 10) minute = "0" + minute;
   let second = now.getSeconds();
   if (second < 10) second = "0" + second;
