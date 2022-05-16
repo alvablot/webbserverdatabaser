@@ -59,6 +59,16 @@ fs.readFile("./people.json", (error, data) => {
 });
 
 const server = http.createServer((req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,HEAD,OPTIONS,POST,PUT"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+  );
   console.log(`${req.method} till url: ${req.url}`);
   const items = req.url.split("/");
   //let id = 0;
@@ -77,7 +87,6 @@ const server = http.createServer((req, res) => {
   }
 
   if (items[1] === "api" && items[2] === "persons" && items[3]) {
-
     if (req.method === "GET") {
       if (oId === undefined) {
         res.statusCode = 404;
@@ -97,20 +106,21 @@ const server = http.createServer((req, res) => {
       }
     }
     if (req.method === "POST") {
-
-      res.statusCode = 201;
+      //res.statusCode = 201;
       req.on("data", (chunk) => {
         //console.log(chunk.toString());
-        const data = chunk.toString();
+        const data = chunk.toString(); // Behövs inte
         const newPerson = JSON.parse(data);
         people.forEach((element, i) => {
-          if (newPerson.id === element.id) {
+         if (newPerson.id === element.id) {
             res.statusCode = 409;
             console.log(`ID ${element.id} finns redan`);
+            res.end();
           }
           if (newPerson.name === element.name) {
             res.statusCode = 409;
             console.log(`Namn ${element.name} finns redan`);
+            res.end();
           }
         });
         if (res.statusCode !== 409) {
@@ -124,26 +134,25 @@ const server = http.createServer((req, res) => {
           });
         }
       });
+    } else if (req.method === "DELETE") {
+      res.statusCode = 204;
+      people.forEach((element, i) => {
+        if (element.id === parseInt(items[3])) {
+          if (i == 0) people.splice(0, 1);
+          people.splice(i, i);
+          console.log(`Delete ${element.id}`);
+          console.log(`Delete ${element.name}`);
+
+          const stringifiedJson = JSON.stringify(people, null, 2);
+          fs.writeFile("./people.json", stringifiedJson, (err) => {
+            if (err) throw err;
+            else {
+              console.log("Deleted from people.json");
+            }
+          });
+        }
+      });
     }
-    if (req.method === "DELETE") {
-        res.statusCode = 204;
-        people.forEach((element, i) => {
-          if (element.id === parseInt(items[3])) {
-            if (i == 0) people.splice(0, 1);
-            people.splice(i, i);
-            console.log(`Delete ${element.id}`);
-            console.log(`Delete ${element.name}`);
-    
-            const stringifiedJson = JSON.stringify(people, null, 2);
-            fs.writeFile("./people.json", stringifiedJson, (err) => {
-              if (err) throw err;
-              else {
-                console.log("Deleted from people.json");
-              }
-            });
-          }
-        });
-      }
   } else if (items[1] === "info" && req.method === "GET") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
@@ -156,11 +165,10 @@ const server = http.createServer((req, res) => {
         <p>${getDateStamp()}</p>
      `);
     res.write(documentEnd);
-  } 
- else {
+  } else {
     res.statusCode = 404;
   }
-  res.end();
+  //res.end();
 });
 
 server.listen(port, () => {
