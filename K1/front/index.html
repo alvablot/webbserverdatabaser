@@ -7,16 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <script>
-    const addTask = async () => {
-      const res = await fetch("http://localhost:4000/todos/1", {
+    const getTask = async () => {
+      const res = await fetch("http://localhost:4000/todos/", {
         method: "GET",
         headers: { "Content-Type": "application/json" }
       })
       console.log(res);
-      //const { data } = await axios.get("http://localhost:4000/");
-      //setStudents(data);
     }
-    addTask()
+    getTask()
   </script>
 </head>
 

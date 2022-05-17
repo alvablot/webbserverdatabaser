@@ -14,10 +14,7 @@ fs.readFile("./list.json", (error, data) => {
 const app = http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET,HEAD,OPTIONS,POST,PUT"
-  );
+  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
@@ -33,12 +30,12 @@ const app = http.createServer((req, res) => {
   const isDelete = req.method === "DELETE";
   let id = 0;
   if (!isNaN(parseInt(endpoints[2]))) id = parseInt(endpoints[2]);
-
+  console.log(req.method);
   if (isGet && showAll) {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.write(`Hämta alla todos`);
-    console.log(list);
+    //console.log(list);
     res.end();
   } else if (isGet && id > 0) {
     res.statusCode = 200;
