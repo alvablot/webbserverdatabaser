@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module">
+      let lista = [];
+      const getTask = async (id) => {
+        const res = await fetch(`http://localhost:4000/todos/${id}`, {
+          method: "GET",
+        });
+        const data = await res.json();
+        console.log(data.length);
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <script>
-    const getTask = async () => {
-      const res = await fetch("http://localhost:4000/todos/", {
-        method: "GET",
-        headers: { "Content-Type": "application/json" }
-      })
-      console.log(res);
-    }
-    getTask()
-  </script>
-</head>
+        data.forEach((element) => {
+          console.log(element.task);
+          console.log(element.fullfilled);
+          console.log(element.id);
+        });
+      };
+      console.log(lista);
+      const fetchPost = async () => {
+        const res = await fetch(`http://localhost:4000/todos`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ task: "Shop", fullfilled: "false", id: 8 }),
+        });
+        console.log(res);
+      };
+      //fetchPost();
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
-</body>
+      const fetchDelete = async (id) => {
+        const res = await fetch(`http://localhost:4000/todos/${id}`, {
+          method: "DELETE",
+        });
+        console.log(res);
+      };
+      //fetchGet()
+      //fetchDelete()
+      //fetchPost()
+      const knapp = [
+        document.getElementById("knapp"),
+        document.getElementById("knapp2"),
+        document.getElementById("knapp3"),
+        document.getElementById("knapp4"),
+      ];
+      const app = document.getElementById("app");
+      
+      knapp[0].addEventListener("click", () => {
+        fetchDelete(790946184497096800);
+      });
+      knapp[1].addEventListener("click", () => {
+        getTask("");
+      });
+      knapp[2].addEventListener("click", () => {
+        getTask(4);
+      });
+      knapp[3].addEventListener("click", () => {
+        fetchPost();
+      });
+    </script>
+  </head>
 
+  <body>
+    <button id="knapp">Delete</button>
+    <button id="knapp2">Visa alla</button>
+    <button id="knapp3">Visa en</button>
+    <button id="knapp4">Skapa ny</button>
+    <div id="app"></div>
+  </body>
 </html>

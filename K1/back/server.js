@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const port = 4000;
 let list = [{}];
-
+let i = 1;
 fs.readFile("./list.json", (error, data) => {
   if (error) {
     console.log("Filen kunde inte öppnas");
@@ -12,13 +12,17 @@ fs.readFile("./list.json", (error, data) => {
 });
 
 const app = http.createServer((req, res) => {
+  /*
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
   );
+  */
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   const endpoints = req.url.split("/");
 
   const showAll = endpoints[1] === "todos" && !endpoints[2];
@@ -28,23 +32,20 @@ const app = http.createServer((req, res) => {
   const isPut = req.method === "PUT";
   const isPatch = req.method === "PATCH";
   const isDelete = req.method === "DELETE";
+  const isOptions = req.method === "OPTIONS";
   let id = 0;
   if (!isNaN(parseInt(endpoints[2]))) id = parseInt(endpoints[2]);
   console.log(req.method);
   if (isGet && showAll) {
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/html; charset=utf-8");
-    res.write(`Hämta alla todos`);
-    //console.log(list);
-    res.end();
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify(list));
   } else if (isGet && id > 0) {
+    res.writeHead(200, { "Content-Type": "application/json" });
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/html; charset=utf-8");
     const task = list.filter((task) => task.id === id);
-
     if (task[0]) {
-      res.write(`Hämta todo id ${task[0].id} ${task[0].task}`);
-      res.end();
+      res.end(JSON.stringify(task));
     } else {
       res.statusCode = 404;
       res.end();
@@ -111,7 +112,11 @@ const app = http.createServer((req, res) => {
       });
     });
     res.end();
-  } else {
+  } else if(isOptions) {
+    res.statusCode = 200;
+    res.end();
+  } 
+  else {
     res.statusCode = 404;
     res.end();
   }
@@ -123,25 +128,25 @@ app.listen(port, () => {
 
 /*
 
-    fetch("http://localhost:3001/todos/", {
+    fetch("http://localhost:4000/todos/", {
     method: "POST",
     body: JSON.stringify({task: "Shop", fullfilled: "false", id: 8 }),
     headers: { "Content-Type": "application/json" }
     })
 
 
-    fetch("http://localhost:3001/todos/8", {
+    fetch("http://localhost:4000/todos/8", {
     method: "DELETE"
     })
 
 
-    fetch("http://localhost:3001/todos/1", {
+    fetch("http://localhost:4000/todos/1", {
     method: "PUT",
     body: JSON.stringify({task: "Shop", fullfilled: "false"}),
     headers: { "Content-Type": "application/json" }
     })
 
-    fetch("http://localhost:3001/todos/3", {
+    fetch("http://localhost:4000/todos/3", {
     method: "PATCH",
     body: JSON.stringify({task: "Hepp", fullfilled: "false"}),
     headers: { "Content-Type": "application/json" }
