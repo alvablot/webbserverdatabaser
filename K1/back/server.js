@@ -12,7 +12,7 @@ fs.readFile("./list.json", (error, data) => {
 });
 
 const app = http.createServer((req, res) => {
-  /*
+  
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Credentials", "true");
   res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH");
@@ -20,9 +20,11 @@ const app = http.createServer((req, res) => {
     "Access-Control-Allow-Headers",
     "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
   );
-  */
+  
+ /*
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   res.setHeader("Access-Control-Allow-Origin", "*");
+  */
   const endpoints = req.url.split("/");
 
   const showAll = endpoints[1] === "todos" && !endpoints[2];
