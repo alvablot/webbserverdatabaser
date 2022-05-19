@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module">
+      let lista = [];
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <script type="module">
-    let lista = [];
-    const getTask = async (id) => {
-      const res = await fetch(`http://localhost:4000/todos/${id}`, {
-        method: "GET",
-      });
-      const lista = await res.json();
-      console.log(lista.length);
-      app.innerHTML = "";
-      lista.forEach((element) => {
-        const container = document.createElement("div");
-        const task = document.createElement("input");
-        const fullfilled = document.createElement("div");
-        const dButton = document.createElement("button");
-        const uButton = document.createElement("button");
+      function renderList() {
+        app.innerHTML = "";
+        lista.forEach((element) => {
+          const container = document.createElement("div");
+          const task = document.createElement("input");
+          const fullfilled = document.createElement("div");
+          const dButton = document.createElement("button");
+          const uButton = document.createElement("button");
+          const idSpan = document.createElement("span");
 
-        app.appendChild(container);
+          app.appendChild(container);
 
-        task.value = element.task;
-        fullfilled.textContent = element.fullfilled;
-        dButton.textContent = "Delete";
-        dButton.setAttribute('id', `d_${element.id}`);
-        uButton.textContent = "Update";
-        dButton.setAttribute('id', `u_${element.id}`);
+          task.value = element.task;
+          fullfilled.textContent = element.fullfilled;
+          idSpan.textContent = ` id ${element.id}`;
+          dButton.textContent = "Delete";
+          dButton.setAttribute("id", `d_${element.id}`);
+          uButton.textContent = "Update";
+          dButton.setAttribute("id", `u_${element.id}`);
 
-        container.appendChild(task);
-        //app.appendChild(fullfilled);
-        container.appendChild(uButton);
-        container.appendChild(dButton);
+          container.appendChild(task);
+          //app.appendChild(fullfilled);
+          container.appendChild(uButton);
+          container.appendChild(dButton);
+          container.appendChild(idSpan);
 
-        dButton.addEventListener("click", () => {
-          fetchDelete(parseInt(element.id));
+          dButton.addEventListener("click", () => {
+            fetchDelete(parseInt(element.id));
+          });
         });
-      });
-    };
-    console.log(lista);
-    const fetchPost = async () => {
-      const res = await fetch(`http://localhost:4000/todos`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ task: "Shop", fullfilled: "false", id: 8 }),
-      });
-      console.log(res);
-    };
-    //fetchPost();
+      }
+      const getTask = async (id) => {
+        const res = await fetch(`http://localhost:4000/todos/${id}`, {
+          method: "GET",
+        });
+        lista = await res.json();
+        //console.log(lista.length);
+        renderList();
+      };
+      console.log(lista);
+      const fetchPost = async () => {
+        const res = await fetch(`http://localhost:4000/todos`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ task: "Shop", fullfilled: "false", id: 8 }),
+        });
+        //console.log(res);
+      };
+      //fetchPost();
 
-    const fetchDelete = async (id) => {
+      const fetchDelete = async (id) => {
+        
       const res = await fetch(`http://localhost:4000/todos/${id}`, {
         method: "DELETE",
       });
-      console.log(res);
-    };
-    //fetchGet()
-    //fetchDelete()
-    //fetchPost()
-    const knapp = [
-      document.getElementById("knapp2"),
-      document.getElementById("knapp3"),
-      document.getElementById("knapp4"),
-    ];
-    const app = document.getElementById("app");
+        console.log(id);
+        const newList = lista.filter((task) => task.id !== id);
+        lista = newList;
+        console.log(lista.length);
+        renderList();
+        // console.log(newList.length);
+      };
+      //fetchGet()
+      //fetchDelete()
+      //fetchPost()
+      const knapp = [
+        document.getElementById("knapp2"),
+        document.getElementById("knapp3"),
+        document.getElementById("knapp4"),
+      ];
+      const app = document.getElementById("app");
 
-     /*
+      /*
      knapp[0].addEventListener("click", () => {
       fetchDelete(790946184497096800);
     }); 
     */
-    knapp[0].addEventListener("click", () => {
-      getTask("");
-    });
-    knapp[1].addEventListener("click", () => {
-      getTask(4);
-    });
-    knapp[2].addEventListener("click", () => {
-      fetchPost();
-    });
-  </script>
-</head>
+      knapp[0].addEventListener("click", () => {
+        getTask("");
+      });
+      knapp[1].addEventListener("click", () => {
+        getTask(4);
+      });
+      knapp[2].addEventListener("click", () => {
+        fetchPost();
+      });
+    </script>
+  </head>
 
-<body>
-  <button id="knapp2">Visa alla</button>
-  <button id="knapp3">Visa en</button>
-  <button id="knapp4">Skapa ny</button>
-  <div id="app"></div>
-</body>
-
+  <body>
+    <button id="knapp2">Visa alla</button><br>
+    <button id="knapp3">Visa</button> ID<input type="text" id="idText"><br>
+    <button id="knapp4">Skapa ny</button><input type="text" id="newTask">
+    <div id="app"></div>
+  </body>
 </html>

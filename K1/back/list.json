@@ -2,21 +2,31 @@
   {
     "task": "Shop",
     "fullfilled": "false",
-    "id": 7
-  },
-  {
-    "task": "Jag älskar daj",
-    "fullfilled": "true",
-    "id": 100
-  },
-  {
-    "task": "Shop",
-    "fullfilled": "false",
     "id": 72036575240196480
   },
   {
     "task": "Shop",
     "fullfilled": "false",
     "id": 1633880091879107800
+  },
+  {
+    "task": "Wash",
+    "fullfilled": "false",
+    "id": 1341517639776830000
+  },
+  {
+    "task": "Laundry",
+    "fullfilled": "false",
+    "id": 1646221168328496400
+  },
+  {
+    "task": "Homework",
+    "fullfilled": "false",
+    "id": 736322346177866600
+  },
+  {
+    "task": "Pay bills",
+    "fullfilled": "false",
+    "id": 1060975347414340500
   }
 ]

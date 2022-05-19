@@ -71,8 +71,8 @@ const app = http.createServer((req, res) => {
   } else if (isDelete && id > 0) {
     res.statusCode = 202;
     const newList = list.filter((task) => task.id !== id);
-
-    list.push(newList);
+    list = newList;
+    //list.push(newList);
     const newJson = JSON.stringify(newList, null, 2);
     fs.writeFile("./list.json", newJson, (err) => {
       if (err) throw err;
