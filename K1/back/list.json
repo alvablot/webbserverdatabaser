@@ -1,32 +1,27 @@
 [
   {
-    "task": "Shop",
-    "fullfilled": "false",
-    "id": 72036575240196480
-  },
-  {
-    "task": "Shop",
-    "fullfilled": "false",
-    "id": 1633880091879107800
-  },
-  {
-    "task": "Wash",
-    "fullfilled": "false",
-    "id": 1341517639776830000
-  },
-  {
-    "task": "Laundry",
-    "fullfilled": "false",
-    "id": 1646221168328496400
-  },
-  {
     "task": "Homework",
     "fullfilled": "false",
     "id": 736322346177866600
   },
   {
-    "task": "Pay bills",
-    "fullfilled": "false",
+    "task": "Train",
+    "fullfilled": "true",
     "id": 1060975347414340500
+  },
+  {
+    "task": "En til",
+    "fullfilled": "false",
+    "id": 598138491740220400
+  },
+  {
+    "task": "Laundry",
+    "fullfilled": "false",
+    "id": 444477888228124540
+  },
+  {
+    "task": "Clean",
+    "fullfilled": "true",
+    "id": 338120687070725700
   }
 ]

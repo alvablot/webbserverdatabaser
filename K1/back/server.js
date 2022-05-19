@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const port = 4000;
 let list = [{}];
-let i = 1;
+
 fs.readFile("./list.json", (error, data) => {
   if (error) {
     console.log("Filen kunde inte öppnas");
@@ -12,19 +12,16 @@ fs.readFile("./list.json", (error, data) => {
 });
 
 const app = http.createServer((req, res) => {
-  
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,HEAD,OPTIONS,POST,PUT,DELETE,PATCH"
+  );
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
   );
-  
- /*
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  */
   const endpoints = req.url.split("/");
 
   const showAll = endpoints[1] === "todos" && !endpoints[2];
@@ -38,6 +35,7 @@ const app = http.createServer((req, res) => {
   let id = 0;
   if (!isNaN(parseInt(endpoints[2]))) id = parseInt(endpoints[2]);
   console.log(req.method);
+  console.log(req.url);
   if (isGet && showAll) {
     res.statusCode = 200;
     res.writeHead(200, { "Content-Type": "application/json" });
@@ -72,7 +70,6 @@ const app = http.createServer((req, res) => {
     res.statusCode = 202;
     const newList = list.filter((task) => task.id !== id);
     list = newList;
-    //list.push(newList);
     const newJson = JSON.stringify(newList, null, 2);
     fs.writeFile("./list.json", newJson, (err) => {
       if (err) throw err;
@@ -101,9 +98,12 @@ const app = http.createServer((req, res) => {
     const taskIndex = list.findIndex((list) => list.id === id);
     req.on("data", (chunk) => {
       const data = JSON.parse(chunk);
-
+      console.log(data.fullfilled);
       if (data.task) {
         list[taskIndex].task = data.task;
+      }
+      if (data.fullfilled) {
+        list[taskIndex].fullfilled = data.fullfilled;
       }
       const updatedList = JSON.stringify(list, null, 2);
       fs.writeFile("./list.json", updatedList, (err) => {
@@ -114,11 +114,10 @@ const app = http.createServer((req, res) => {
       });
     });
     res.end();
-  } else if(isOptions) {
+  } else if (isOptions) {
     res.statusCode = 200;
     res.end();
-  } 
-  else {
+  } else {
     res.statusCode = 404;
     res.end();
   }
@@ -132,7 +131,7 @@ app.listen(port, () => {
 
     fetch("http://localhost:4000/todos/", {
     method: "POST",
-    body: JSON.stringify({task: "Shop", fullfilled: "false", id: 8 }),
+    body: JSON.stringify({task: "Shop", fullfilled: "false"}),
     headers: { "Content-Type": "application/json" }
     })
 

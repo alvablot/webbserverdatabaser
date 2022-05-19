@@ -5,37 +5,59 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
     <script type="module">
       let lista = [];
-
+      let whatTask = "";
       function renderList() {
         app.innerHTML = "";
-        lista.forEach((element) => {
+        lista.forEach((element, i) => {
           const container = document.createElement("div");
           const task = document.createElement("input");
-          const fullfilled = document.createElement("div");
+          const fullfilled = document.createElement("button");
           const dButton = document.createElement("button");
           const uButton = document.createElement("button");
-          const idSpan = document.createElement("span");
+          const idButton = document.createElement("button");
 
           app.appendChild(container);
-
+          let done;
+          if (element.fullfilled === "true") {
+            container.classList.add("done");
+            fullfilled.textContent = "Undo";
+            done = "false";
+          } else {
+            container.classList.add("undone");
+            fullfilled.textContent = "Do";
+            done = "true";
+          }
           task.value = element.task;
-          fullfilled.textContent = element.fullfilled;
-          idSpan.textContent = ` id ${element.id}`;
+          let idText = element.id.toString().substring(1, 12);
+
+          if (whatTask === "") idButton.textContent = ` Show ${idText}...`;
+          else idButton.textContent = ` ${element.id}`;
           dButton.textContent = "Delete";
           dButton.setAttribute("id", `d_${element.id}`);
           uButton.textContent = "Update";
           dButton.setAttribute("id", `u_${element.id}`);
 
           container.appendChild(task);
-          //app.appendChild(fullfilled);
           container.appendChild(uButton);
           container.appendChild(dButton);
-          container.appendChild(idSpan);
+          container.appendChild(idButton);
+          container.appendChild(fullfilled);
 
           dButton.addEventListener("click", () => {
             fetchDelete(parseInt(element.id));
+          });
+          uButton.addEventListener("click", () => {
+            fetchPatch(parseInt(element.id), task.value, element.fullfilled);
+          });
+          fullfilled.addEventListener("click", () => {
+            fetchPatch(parseInt(element.id), task.value, done);
+          });
+          idButton.addEventListener("click", () => {
+            getTask(parseInt(element.id));
+            whatTask = element.id;
           });
         });
       }
@@ -44,63 +66,65 @@
           method: "GET",
         });
         lista = await res.json();
-        //console.log(lista.length);
         renderList();
       };
-      console.log(lista);
-      const fetchPost = async () => {
+      const fetchPost = async (task) => {
         const res = await fetch(`http://localhost:4000/todos`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ task: "Shop", fullfilled: "false", id: 8 }),
+          body: JSON.stringify({ task: `${task}`, fullfilled: "false" }),
         });
-        //console.log(res);
+        getTask(whatTask);
+        renderList();
       };
-      //fetchPost();
 
       const fetchDelete = async (id) => {
-        
-      const res = await fetch(`http://localhost:4000/todos/${id}`, {
-        method: "DELETE",
-      });
-        console.log(id);
-        const newList = lista.filter((task) => task.id !== id);
-        lista = newList;
-        console.log(lista.length);
+        const res = await fetch(`http://localhost:4000/todos/${id}`, {
+          method: "DELETE",
+        });
+        whatTask = "";
+        getTask(whatTask);
         renderList();
-        // console.log(newList.length);
       };
-      //fetchGet()
-      //fetchDelete()
-      //fetchPost()
+
+      const fetchPatch = async (id, value, done) => {
+        const res = await fetch(`http://localhost:4000/todos/${id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ task: `${value}`, fullfilled: `${done}` }),
+        });
+
+        getTask(whatTask);
+        renderList();
+      };
+
       const knapp = [
         document.getElementById("knapp2"),
-        document.getElementById("knapp3"),
         document.getElementById("knapp4"),
       ];
       const app = document.getElementById("app");
+      const idText = document.getElementById("idText");
+      const newTask = document.getElementById("newTask");
 
-      /*
-     knapp[0].addEventListener("click", () => {
-      fetchDelete(790946184497096800);
-    }); 
-    */
       knapp[0].addEventListener("click", () => {
-        getTask("");
+        whatTask = "";
+        getTask(whatTask);
       });
+
       knapp[1].addEventListener("click", () => {
-        getTask(4);
+        fetchPost(newTask.value);
+        newTask.value = "";
       });
-      knapp[2].addEventListener("click", () => {
-        fetchPost();
-      });
+      getTask(whatTask);
     </script>
   </head>
 
   <body>
-    <button id="knapp2">Visa alla</button><br>
-    <button id="knapp3">Visa</button> ID<input type="text" id="idText"><br>
-    <button id="knapp4">Skapa ny</button><input type="text" id="newTask">
-    <div id="app"></div>
+    <main>
+      <h1>Petter's To-Do List</h1>
+      <button id="knapp2">Visa alla</button><br />
+      <button id="knapp4">Skapa ny</button><input type="text" id="newTask" />
+      <div id="app"></div>
+    </main>
   </body>
 </html>
