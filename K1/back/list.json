@@ -1,16 +1,16 @@
 [
   {
     "task": "Homework",
-    "fullfilled": "true",
+    "fullfilled": "false",
     "id": 736322346177866600
   },
   {
-    "task": "Train",
-    "fullfilled": "true",
+    "task": "Practice",
+    "fullfilled": "false",
     "id": 1060975347414340500
   },
   {
-    "task": "En til",
+    "task": "Wash the car",
     "fullfilled": "false",
     "id": 598138491740220400
   },
@@ -20,8 +20,8 @@
     "id": 444477888228124540
   },
   {
-    "task": "Älskar daj",
-    "fullfilled": "true",
+    "task": "Cook",
+    "fullfilled": "false",
     "id": 338120687070725700
   }
 ]
