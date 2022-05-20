@@ -1,16 +1,16 @@
-# Read me - K1 API for Waiting List App
+# K1 API for Waiting List App
 
 This repository is my the first assigment in Webbserverdatabaser
 
 ### How to install
 
-Download the server.js and list.json file and run it in your terminal with Node
+Download the back/server.js and back/list.json file and run your terminal with Node
 
 ```
 $ node server.js
 ```
 
-Then the server will listen on port 4000, wich you can open in your browser
+Then the server will listen on port 4000, 
 http://localhost:4000
 
 ### GET all tasks
@@ -22,7 +22,7 @@ http://localhost:4000
 
 ```
 
-### GET specific task from the .json file
+### GET specific task
 
 ```JS
     fetch('http://localhost:4000/todos/:ID')
@@ -30,16 +30,44 @@ http://localhost:4000
             .then(json => console.log(json))
 ```
 
-### POST new task to the .json file
+### POST new task
 
 ```JS
     fetch("http://localhost:4000/todos/", {
-    method: "POST",
-    body: JSON.stringify({task: "String", fullfilled: boolean}),
-    headers: { "Content-Type": "application/json" }
+     method: "POST",
+     body: JSON.stringify({task: "String", // "What ever you want your task to be"
+     fullfilled: "boolean"}), // Set "true" or "false"
+     headers: { "Content-Type": "application/json" }
     })
 ```
+The server will automatically create a unique ID
 
+### DELETE task
 
+```JS
+    fetch("http://localhost:4000/todos/:ID", {
+     method: "DELETE"
+    })
+```
+### PUT (update full) ask
+
+```JS
+    fetch("http://localhost:4000/todos/:ID", {
+     method: "PUT",
+     body: JSON.stringify({task: "String", // "What ever you want your task to be"
+     fullfilled: "boolean"}), // Set "true" or "false"
+     headers: { "Content-Type": "application/json" }
+    })
+```
+### PATCH (update partial) ask
+
+```JS
+    fetch("http://localhost:4000/todos/:ID", {
+     method: "PATCH",
+     body: JSON.stringify({task: "String", // "What ever you want your task to be" or skip
+     fullfilled: "boolean"}), // Set "true" or "false" or skip
+     headers: { "Content-Type": "application/json" }
+    })
+```
 
 
