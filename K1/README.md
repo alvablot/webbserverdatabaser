@@ -4,7 +4,7 @@ This repository is my first assigment in the Webbserverdatabaser course
 
 ### How to install
 
-Download the back/server.js and back/list.json file and run your terminal with Node
+Download the back/server.js and back/list.json file and run with Node in your terminal 
 
 ```
 $ node server.js
@@ -16,7 +16,7 @@ http://localhost:4000
 ### GET all tasks
 
 ```JS
-    fetch('http://localhost:4000/todos')
+    fetch("http://localhost:4000/todos")
         .then(res => res.json())
         .then(json => console.log(json))
 
@@ -25,7 +25,7 @@ http://localhost:4000
 ### GET specific task
 
 ```JS
-    fetch('http://localhost:4000/todos/:id')
+    fetch("http://localhost:4000/todos/:id")
         .then(res => res.json())
         .then(json => console.log(json))
 ```
@@ -40,19 +40,19 @@ http://localhost:4000
         headers: { "Content-Type": "application/json" }
     })
 ```
-The server will automatically create a unique ID
+The server will automatically create a unique id
 
 ### DELETE task
 
 ```JS
-    fetch("http://localhost:4000/todos/:id", {
+    fetch("http://localhost:4000/todos/id", {
         method: "DELETE"
     })
 ```
 ### PUT (update full) task
 
 ```JS
-    fetch("http://localhost:4000/todos/:id", {
+    fetch("http://localhost:4000/todos/id", {
         method: "PUT",
         body: JSON.stringify({task: "String", // "What ever you want your task to be"
         fullfilled: "boolean"}), // Set "true" or "false"
@@ -62,7 +62,7 @@ The server will automatically create a unique ID
 ### PATCH (update partial) task
 
 ```JS
-    fetch("http://localhost:4000/todos/:id", {
+    fetch("http://localhost:4000/todos/id", {
         method: "PATCH",
         body: JSON.stringify({task: "String", // "What ever you want your task to be" or skip
         fullfilled: "boolean"}), // Set "true" or "false" or skip
