@@ -25,7 +25,7 @@ http://localhost:4000
 ### GET specific task
 
 ```JS
-    fetch("http://localhost:4000/todos/:id")
+    fetch("http://localhost:4000/todos/id")
         .then(res => res.json())
         .then(json => console.log(json))
 ```
