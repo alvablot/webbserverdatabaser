@@ -49,7 +49,7 @@ The server will automatically create a unique ID
         method: "DELETE"
     })
 ```
-### PUT (update full) ask
+### PUT (update full) task
 
 ```JS
     fetch("http://localhost:4000/todos/:id", {
@@ -59,7 +59,7 @@ The server will automatically create a unique ID
         headers: { "Content-Type": "application/json" }
     })
 ```
-### PATCH (update partial) ask
+### PATCH (update partial) task
 
 ```JS
     fetch("http://localhost:4000/todos/:id", {
