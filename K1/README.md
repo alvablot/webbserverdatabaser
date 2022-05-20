@@ -1,6 +1,6 @@
 # K1 API for Waiting List App
 
-This repository is my the first assigment in Webbserverdatabaser
+This repository is my first assigment in the Webbserverdatabaser course
 
 ### How to install
 
@@ -25,7 +25,7 @@ http://localhost:4000
 ### GET specific task
 
 ```JS
-    fetch('http://localhost:4000/todos/:ID')
+    fetch('http://localhost:4000/todos/:id')
             .then(res => res.json())
             .then(json => console.log(json))
 ```
@@ -45,14 +45,14 @@ The server will automatically create a unique ID
 ### DELETE task
 
 ```JS
-    fetch("http://localhost:4000/todos/:ID", {
+    fetch("http://localhost:4000/todos/:id", {
      method: "DELETE"
     })
 ```
 ### PUT (update full) ask
 
 ```JS
-    fetch("http://localhost:4000/todos/:ID", {
+    fetch("http://localhost:4000/todos/:id", {
      method: "PUT",
      body: JSON.stringify({task: "String", // "What ever you want your task to be"
      fullfilled: "boolean"}), // Set "true" or "false"
@@ -62,7 +62,7 @@ The server will automatically create a unique ID
 ### PATCH (update partial) ask
 
 ```JS
-    fetch("http://localhost:4000/todos/:ID", {
+    fetch("http://localhost:4000/todos/:id", {
      method: "PATCH",
      body: JSON.stringify({task: "String", // "What ever you want your task to be" or skip
      fullfilled: "boolean"}), // Set "true" or "false" or skip
