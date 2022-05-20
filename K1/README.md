@@ -1,4 +1,4 @@
-# K1 API for Waiting List App
+# K1 API for Todo List App
 
 This repository is my first assigment in the Webbserverdatabaser course
 
