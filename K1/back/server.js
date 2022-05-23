@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-const port = 5000;
+const port = 4000;
 let list = [{}];
 
 fs.readFile("./list.json", (error, data) => {
@@ -42,7 +42,7 @@ const app = http.createServer((req, res) => {
     res.statusCode = 200;
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify(list));
-  } else if (isGet && id > 0) {
+  } else if (isGet) {
     if (containsTask) {
       res.writeHead(200, { "Content-Type": "application/json" });
       res.statusCode = 200;
@@ -89,7 +89,11 @@ const app = http.createServer((req, res) => {
         res.end("The body of the request is invalid.");
       }
     });
-  } else if (isDelete && containsTask) {
+  } else if (isDelete) {
+    if (!containsTask) {
+      res.statusCode = 400;
+      res.end();
+    }
     res.statusCode = 202;
     const newList = list.filter((task) => task.id !== id);
     list = newList;
@@ -99,7 +103,11 @@ const app = http.createServer((req, res) => {
       console.log(`Deleted task ${id} from list.json`);
     });
     res.end();
-  } else if (isPut && containsTask) {
+  } else if (isPut) {
+    if (!containsTask) {
+      res.statusCode = 400;
+      res.end();
+    }
     res.statusCode = 202;
     const taskIndex = list.findIndex((list) => list.id === id);
 
@@ -126,15 +134,16 @@ const app = http.createServer((req, res) => {
       }
     });
     res.end();
-  } else if (isPatch && containsTask) {
+  } else if (isPatch) {
+    if (!containsTask) {
+      res.statusCode = 400;
+      res.end();
+    }
     res.statusCode = 202;
     const taskIndex = list.findIndex((list) => list.id === id);
     req.on("data", (chunk) => {
       const data = JSON.parse(chunk);
-      if (
-        Object.keys(data).length > 0 &&
-        Object.keys(data).length < 3
-      ) {
+      if (Object.keys(data).length > 0 && Object.keys(data).length < 3) {
         if (data.task) {
           list[taskIndex].task = data.task;
         }
@@ -154,7 +163,6 @@ const app = http.createServer((req, res) => {
         res.end();
       }
     });
-    
   } else if (isOptions) {
     res.statusCode = 200;
     res.end();
