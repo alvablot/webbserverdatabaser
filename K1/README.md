@@ -21,6 +21,21 @@ http://localhost:4000
         .then(json => console.log(json))
 
 ```
+Output:
+```
+[
+	{
+		"task": "...",
+		"fullfilled": "boolean",
+		"id": number
+	},
+	{
+		"task": "...",
+		"fullfilled": "boolean",
+		"id": number2
+	}
+]
+```
 
 ### GET specific task
 
@@ -29,7 +44,16 @@ http://localhost:4000
         .then(res => res.json())
         .then(json => console.log(json))
 ```
-
+Output:
+```
+[
+	{
+		"task": "...",
+		"fullfilled": "boolean",
+		"id": id
+	}
+]
+```
 ### POST new task
 
 ```JS

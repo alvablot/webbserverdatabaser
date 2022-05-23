@@ -12,8 +12,8 @@ const logger = (req, res, next) => {
 
 const checkString = (req, res, next) => {
   const isString = typeof req.body[0].value === "string";
-  if (isString) console.log(isString);
-  else throw Error();
+  if (!isString) throw Error();
+  else console.log(isString);
   next();
 };
 
@@ -34,7 +34,9 @@ app.post("/lowercase", logger, (req, res) => {
 
 app.post("/capitalizad", logger, (req, res) => {
   let makeCapitalizad = req.body[0].value.substring(0, 1).toUpperCase();
-  makeCapitalizad += req.body[0].value.substring(1, req.body[0].value.length).toLowerCase();
+  makeCapitalizad += req.body[0].value
+    .substring(1, req.body[0].value.length)
+    .toLowerCase();
   const resToCapitalizad = { value: makeCapitalizad };
   res.send(resToCapitalizad);
   res.end();
@@ -42,7 +44,7 @@ app.post("/capitalizad", logger, (req, res) => {
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send("My heart is broken");
+  res.status(500).send("Value must be a string");
 });
 
 app.listen(port, () => {
