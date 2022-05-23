@@ -60,16 +60,16 @@ const app = http.createServer((req, res) => {
   } else if (isPost) {
     res.statusCode = 201;
     let data;
+    let newTask;
     req.on("data", (chunk) => {
-      const newTask = JSON.parse(chunk);
-      console.log(Object.keys(newTask).length);
-      if (!JSON.parse(chunk)) {
-        res.statusCode = 400;
-        res.end();
-      } else if (Object.keys(newTask).length === 2) {
-        console.log(newTask);
+      try {
+        newTask = JSON.parse(chunk);
+      } catch (error) {
+        console.log(`JSON.parse error:: ${error.message}`);
+        newTask = {};
+      }
+      if (Object.keys(newTask).length === 2) {
         newTask.id = new Date().getTime() * Math.round(Math.random() * 999999);
-        console.log(newTask.id);
         list.push(newTask);
         const newJson = JSON.stringify(list, null, 2);
         fs.writeFile("./list.json", newJson, (err) => {
@@ -86,7 +86,7 @@ const app = http.createServer((req, res) => {
     req.on("end", () => {
       if (!data) {
         res.statusCode = 400;
-        res.end("The body of the request is invalid.");
+        res.end("The body of the request is empty.");
       }
     });
   } else if (isDelete) {
@@ -112,15 +112,15 @@ const app = http.createServer((req, res) => {
     const taskIndex = list.findIndex((list) => list.id === id);
 
     req.on("data", (chunk) => {
-      if (!JSON.parse(chunk)) {
-        res.statusCode = 400;
-        res.end();
+      try {
+        list[taskIndex] = JSON.parse(chunk);
+      } catch (error) {
+        console.log(`JSON.parse: ${error.message}`);
+        list[taskIndex] = {};
       }
-      list[taskIndex] = JSON.parse(chunk);
+
       if (Object.keys(list[taskIndex]).length === 2) {
         list[taskIndex].id = id;
-        console.log(list);
-        console.log(id);
         const updatedList = JSON.stringify(list, null, 2);
         fs.writeFile("./list.json", updatedList, (err) => {
           if (err) throw err;
@@ -175,31 +175,3 @@ const app = http.createServer((req, res) => {
 app.listen(port, () => {
   console.log(`Applikationen körs på port ${port}`);
 });
-
-/*
-
-    fetch("http://localhost:4000/todos/", {
-    method: "POST",
-    body: JSON.stringify({task: "Shop", fullfilled: "false"}),
-    headers: { "Content-Type": "application/json" }
-    })
-
-
-    fetch("http://localhost:4000/todos/8", {
-    method: "DELETE"
-    })
-
-
-    fetch("http://localhost:4000/todos/1", {
-    method: "PUT",
-    body: JSON.stringify({task: "Shop", fullfilled: "false"}),
-    headers: { "Content-Type": "application/json" }
-    })
-
-    fetch("http://localhost:4000/todos/3", {
-    method: "PATCH",
-    body: JSON.stringify({task: "Hepp", fullfilled: "false"}),
-    headers: { "Content-Type": "application/json" }
-    })
-
-*/
