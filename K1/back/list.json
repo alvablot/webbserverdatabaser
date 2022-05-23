@@ -6,7 +6,7 @@
   },
   {
     "task": "Practice",
-    "fullfilled": "false",
+    "fullfilled": "true",
     "id": 1060975347414340500
   },
   {
@@ -20,29 +20,8 @@
     "id": 444477888228124540
   },
   {
-    "task": "StringSleep",
-    "fullfilled": "false",
+    "task": "Test",
+    "fullfilled": "true",
     "id": 338120687070725700
-  },
-  {
-    "task": "String",
-    "fullfilled": "false",
-    "id": 948350540418149400
-  },
-  {
-    "task": "Shop",
-    "fullfilled": "true",
-    "id": 1441102164911663400
-  },
-  {
-    "task": "Shop",
-    "fullfilled": "true",
-    "id": 950811598853573800
-  },
-  {
-    "task": "Shop",
-    "fullfilled": "true",
-    "id": 1242254803454079000
-  },
-  {}
+  }
 ]

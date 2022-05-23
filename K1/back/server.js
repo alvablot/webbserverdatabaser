@@ -65,7 +65,7 @@ const app = http.createServer((req, res) => {
       try {
         newTask = JSON.parse(chunk);
       } catch (error) {
-        console.log(`JSON.parse error:: ${error.message}`);
+        console.log(`JSON.parse error: ${error.message}`);
         newTask = {};
       }
       if (Object.keys(newTask).length === 2) {
@@ -115,7 +115,7 @@ const app = http.createServer((req, res) => {
       try {
         list[taskIndex] = JSON.parse(chunk);
       } catch (error) {
-        console.log(`JSON.parse: ${error.message}`);
+        console.log(`JSON.parse error: ${error.message}`);
         list[taskIndex] = {};
       }
 
