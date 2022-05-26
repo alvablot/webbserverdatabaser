@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const port = 4000;
 const fs = require("fs");
-
+let countries = require("./countries.json");
+/*
 fs.readFile("./countries.json", (error, data) => {
   if (error) {
     console.log("Filen kunde inte öppnas");
@@ -10,7 +11,7 @@ fs.readFile("./countries.json", (error, data) => {
   }
   countries = JSON.parse(data);
 });
-
+*/
 app.get("/countries/:countrycode", function (req, res) {
   let cCode = req.params.countrycode;
   const country = countries.filter((country) => country.alpha2Code === cCode); //alpha2Code
