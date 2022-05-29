@@ -1,10 +1,23 @@
 [
   {
-    "id": 1,
-    "name": "Petter Karlsson"
+    "id": "1",
+    "name": "Petter Karlsson",
+    "age": 45,
+    "email": "mail@mail.com",
+    "licence": "B"
   },
   {
-    "id": 2,
-    "name": "Nisse Njursten"
+    "id": "2",
+    "name": "Nisse Njursten",
+    "age": 45,
+    "email": "mail@mail.com",
+    "licence": "C"
+  },
+  {
+    "id": "3",
+    "name": "Berta Olsson",
+    "age": 65,
+    "email": "mail@mail.com",
+    "licence": "A"
   }
 ]
