@@ -36,10 +36,10 @@ function patchOwner(req, res) {
 }
 
 module.exports = {
-  getOwners: getOwners,
-  getOwner: getOwner,
-  postOwner: postOwner,
-  deleteOwner: deleteOwner,
-  putOwner: putOwner,
-  patchOwner: patchOwner,
+  getOwners,
+  getOwner,
+  postOwner,
+  deleteOwner,
+  putOwner,
+  patchOwner,
 };

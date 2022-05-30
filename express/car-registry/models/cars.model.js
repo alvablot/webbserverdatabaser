@@ -38,29 +38,20 @@ function updateOne(id, data) {
 function patchOne(id, data) {
   const carIndex = cars.findIndex((car) => car.id === id);
 
-  if (carIndex < 0) {
-    return 404;
-  }
-  //console.log(data);
+  if (carIndex < 0) return 404;
+  if (data.reg) cars[carIndex].reg = data.reg;
+  if (data.brand) cars[carIndex].brand = data.brand;
+  if (data.model) cars[carIndex].model = data.model;
 
-  if (data.reg) {
-    cars[carIndex].reg = data.reg;
-  }
-  if (data.brand) {
-    cars[carIndex].brand = data.brand;
-  }
-  if (data.model) {
-    cars[carIndex].model = data.model;
-  }
   return cars;
 }
 
 module.exports = {
   //carsDB: carsDB,
-  cars: cars,
-  getOne: getOne,
-  addOne: addOne,
-  deleteOne: deleteOne,
-  updateOne: updateOne,
-  patchOne: patchOne,
+  cars,
+  getOne,
+  addOne,
+  deleteOne,
+  updateOne,
+  patchOne,
 };

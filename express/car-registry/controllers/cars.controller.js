@@ -46,10 +46,10 @@ function patchCar(req, res) {
 }
 
 module.exports = {
-  getCars: getCars,
-  getCar: getCar,
-  deleteCar: deleteCar,
-  postCar: postCar,
-  putCar: putCar,
-  patchCar: patchCar,
+  getCars,
+  getCar,
+  deleteCar,
+  postCar,
+  putCar,
+  patchCar,
 };
