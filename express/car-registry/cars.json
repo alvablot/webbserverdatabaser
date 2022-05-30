@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "brand": "VOLVO",
+    "model": "V70",
+    "reg": "FDU514"
+  },
+  {
+    "id": "2",
+    "brand": "SAAB",
+    "model": "900 Turbo",
+    "reg": "NWC800"
+  },
+  {
+    "id": "3",
+    "brand": "FORD",
+    "model": "Taunus",
+    "reg": "CBU007"
+  }
+]
