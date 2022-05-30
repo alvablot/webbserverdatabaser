@@ -41,9 +41,8 @@ function deleteOne(id) {
 function updateOne(id, data) {
   const ownerIndex = owners.findIndex((owner) => owner.id === id);
   //console.log(ownerIndex);
-  if (ownerIndex < 0) {
-    return 404;
-  }
+  if (ownerIndex < 0) return 404;
+
   owners[ownerIndex] = {
     id: id,
     name: data.name,
@@ -57,30 +56,20 @@ function updateOne(id, data) {
 function patchOne(id, data) {
   const ownerIndex = owners.findIndex((owner) => owner.id === id);
 
-  if (ownerIndex < 0) {
-    return 404;
-  }
-  if (data.name) {
-    owners[ownerIndex].name = data.name;
-  }
-  if (data.age) {
-    owners[ownerIndex].age = data.age;
-  }
-  if (data.email) {
-    owners[ownerIndex].email = data.email;
-  }
-  if (data.licence) {
-    owners[ownerIndex].licence = data.licence;
-  }
+  if (ownerIndex < 0) return 404;
+  if (data.name) owners[ownerIndex].name = data.name;
+  if (data.age) owners[ownerIndex].age = data.age;
+  if (data.email) owners[ownerIndex].email = data.email;
+  if (data.licence) owners[ownerIndex].licence = data.licence;
+
   return owners;
 }
 
 module.exports = {
-  ownersDB: ownersDB,
-  owners: owners,
-  getOne: getOne,
-  addOne: addOne,
-  deleteOne: deleteOne,
-  updateOne: updateOne,
-  patchOne: patchOne,
+  owners,
+  getOne,
+  addOne,
+  deleteOne,
+  updateOne,
+  patchOne,
 };
