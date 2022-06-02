@@ -1,10 +1,23 @@
 const uuid = require("uuid");
-let cars = require("../cars.json");
+const db = require("../database.js");
+let cars;
+
+function initCars(params) {
+  db.all(params, (err, rows) => {
+    cars = rows;
+  });
+  return cars;
+}
+cars = initCars(`SELECT * from cars`);
+
+function getAll() {
+  return cars;
+}
 
 function getOne(id) {
-  const car = cars.filter((car) => car.id === id);
-  //console.log(cars);
-  return car;
+  id = parseInt(id);
+  cars = initCars(`SELECT * FROM cars WHERE id = ${id}`);
+  return cars;
 }
 
 function addOne(data) {
@@ -18,13 +31,15 @@ function addOne(data) {
 }
 
 function deleteOne(id) {
-  cars = cars.filter((car) => car.id !== id);
+  id = parseInt(id);
+  cars = initCars(`SELECT * FROM cars WHERE id != ${id}`);
   return cars;
 }
 
 function updateOne(id, data) {
+  id = parseInt(id);
   const carIndex = cars.findIndex((car) => car.id === id);
-  //console.log(carIndex);
+
   if (carIndex < 0) return 404;
   cars[carIndex] = {
     id: id,
@@ -36,6 +51,7 @@ function updateOne(id, data) {
 }
 
 function patchOne(id, data) {
+  id = parseInt(id);
   const carIndex = cars.findIndex((car) => car.id === id);
 
   if (carIndex < 0) return 404;
@@ -47,8 +63,8 @@ function patchOne(id, data) {
 }
 
 module.exports = {
-  //carsDB: carsDB,
   cars,
+  getAll,
   getOne,
   addOne,
   deleteOne,

@@ -2,24 +2,15 @@ const express = require("express");
 const app = express();
 const port = 4000;
 
-app.use(express.json());
 
-const db = require("../db_");
-console.log(db);
-/*
-async function getDB() {
-  db.run("SELECT * FROM cars", (error, row) => {
-    if (row) {
-      console.log(row);
-    }
-  });
-}
-*/
+app.use(express.json());
+//console.log(db);
+
 
 const model = require("../models/cars.model");
 
 function getCars(req, res) {
-  res.send(model);
+  res.json(model.getAll());
 }
 
 function getCar(req, res) {
