@@ -3,7 +3,7 @@ const ownersController = require("../controllers/owners.controller");
 const ownersRouter = express.Router();
 
 const morgan = require("morgan");
-carsRouter.use(morgan("dev"));
+ownersRouter.use(morgan("dev"));
 
 ownersRouter.get("/owners", ownersController.getOwners);
 ownersRouter.get("/owners/:id", ownersController.getOwner);

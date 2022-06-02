@@ -1,3 +1,21 @@
+const express = require("express");
+const app = express();
+const port = 4000;
+
+app.use(express.json());
+
+const db = require("../db_");
+console.log(db);
+/*
+async function getDB() {
+  db.run("SELECT * FROM cars", (error, row) => {
+    if (row) {
+      console.log(row);
+    }
+  });
+}
+*/
+
 const model = require("../models/cars.model");
 
 function getCars(req, res) {
@@ -31,7 +49,7 @@ function postCar(req, res) {
 function putCar(req, res) {
   const id = req.params.id;
   const data = req.body;
-  console.log(data);
+  //console.log(data);
   const result = model.updateOne(id, data);
   if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
   res.send(result);
