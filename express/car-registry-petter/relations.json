@@ -1,0 +1,14 @@
+[
+  {
+    "ownerId": "1",
+    "carId": "1"
+  },
+  {
+    "ownerId": "1",
+    "carId": "2"
+  },
+  {
+    "ownerId": "2",
+    "carId": "3"
+  }
+]
