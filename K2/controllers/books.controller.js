@@ -17,19 +17,12 @@ function getBook(req, res) {
 
 function postBook(req, res) {
   let data = req.body;
-  /* if (!data.reg) {
-    res.status(400).json({ error: "Inget regnummer" });
-    return;
-  }
-  if (data.reg.length !== 6) {
-    res.status(400).json({ error: "Felaktigt regnummer" });
-    return;
-  }*/
   res.send(model.addOne(data));
 }
-/*
+
 function deleteBook(req, res) {
   const id = req.params.id;
+  //console.log(id)
   res.send(model.deleteOne(id));
 }
 
@@ -51,12 +44,12 @@ function patchBook(req, res) {
   if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
   res.send(result);
 }
-*/
+
 module.exports = {
   getBooks,
   getBook,
-  //deleteBook,
+  deleteBook,
   postBook,
-  //putBook,
-  //patchBook,
+  putBook,
+  patchBook,
 };
