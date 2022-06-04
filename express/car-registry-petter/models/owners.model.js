@@ -1,8 +1,25 @@
 const uuid = require("uuid");
+const db = require("../database.js");
 const ownersDB = require("../owners.json");
 const relationsDB = require("../relations.json");
-const carsDB = require("../cars.json");
+//const carsDB = require("../cars.json");
 let owners = ownersDB;
+
+
+
+
+
+let carsDB;
+function initCars(params) {
+  db.all(params, (err, rows) => {
+    carsDB = rows;
+  });
+  return carsDB;
+}
+carsDB = initCars(`SELECT * from cars`);
+
+
+
 
 function getOne(id) {
   let owner = ownersDB.find((owner) => owner.id === id);

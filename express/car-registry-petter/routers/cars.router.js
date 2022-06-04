@@ -2,9 +2,6 @@ const express = require("express");
 const carsController = require("../controllers/cars.controller");
 const carsRouter = express.Router();
 
-const morgan = require("morgan");
-carsRouter.use(morgan("dev"));
-
 carsRouter.get("/cars", carsController.getCars);
 carsRouter.get("/cars/:id", carsController.getCar);
 carsRouter.post("/cars", carsController.postCar);
