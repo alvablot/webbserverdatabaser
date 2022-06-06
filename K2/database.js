@@ -5,8 +5,10 @@ const db = new sqlite3.Database("./data/books_db.db", (error) => {
     console.error(error.message);
     throw error;
   }
-
-  console.log("Ansluten till books_db");
+  db.all(`SELECT * FROM books`, (err, rows) => {
+    console.log(rows);
+  });
+  //console.log("Ansluten till books_db");
 
 });
 

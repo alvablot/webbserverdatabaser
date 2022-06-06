@@ -64,7 +64,6 @@ function updateOne(id, data) {
   return borrowers;
 }
 
-// PATCH
 function patchOne(id, data) {
   function updatePart(col, data) {
     db.run(

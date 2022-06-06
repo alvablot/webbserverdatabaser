@@ -14,7 +14,6 @@ function initBooks(query) {
 }
 
 function getAll() {
-  
   const query = fetchTable;
   const result = initBooks(query);
   return result;
@@ -43,9 +42,7 @@ function addOne(data) {
 }
 
 function deleteOne(id) {
-  db.run(`${deleteRow} WHERE id = ?`, id, (err) => {
-    //console.log(id);
-  });
+  db.run(`${deleteRow} WHERE id = ?`, id, (err) => {});
   books = initBooks(fetchTable);
   return books;
 }
@@ -77,7 +74,6 @@ function updateOne(id, data) {
 }
 
 function patchOne(id, data) {
-  // PATCH
   if (data[0].title !== undefined) {
     column = "title";
     insert = data[0].title;
