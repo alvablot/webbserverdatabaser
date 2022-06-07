@@ -6,9 +6,9 @@ const db = new sqlite3.Database("./data/books_db.db", (error) => {
     throw error;
   }
   db.all(`SELECT * FROM books`, (err, rows) => {
-    console.log(rows);
+    //console.log(rows);
   });
-  //console.log("Ansluten till books_db");
+  console.log("Ansluten till books_db");
 
 });
 

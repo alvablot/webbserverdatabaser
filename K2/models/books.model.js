@@ -1,7 +1,7 @@
 const uuid = require("uuid");
 const db = require("../database.js");
 let books;
-const fetchTable = "SELECT * from books";
+const fetchTable = "SELECT * FROM books";
 const deleteRow = "DELETE FROM books ";
 const insertRow = "INSERT INTO books";
 const updateRow = "UPDATE books";
@@ -19,9 +19,10 @@ function getAll() {
   return result;
 }
 
-function getOne(id) {
-  const query = `${fetchTable} WHERE id = ${id}`;
-  books = initBooks(query);
+ function getOne(id,) {
+  const query = `${fetchTable} WHERE id = '${id}'`;
+  const books = initBooks(query);
+  //console.log(query);
   return books;
 }
 
@@ -74,7 +75,7 @@ function updateOne(id, data) {
 }
 
 function patchOne(id, data) {
-  console.log(data.title)
+  //.log(data.title);
   if (data.title !== undefined) {
     column = "title";
     insert = data.title;
@@ -99,17 +100,16 @@ function patchOne(id, data) {
     column = "borrower_id";
     insert = data.borrower_id;
   }
-  
+
   db.run(
     `${updateRow}
     SET ${column} = ?
     WHERE id = ?`,
     [insert, id]
   );
-  
+
   books = initBooks(fetchTable);
   return books;
-  
 }
 
 module.exports = {

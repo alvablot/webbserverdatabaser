@@ -7,13 +7,12 @@ const port = 4000;
 const model = require("../models/books.model");
 
 function getBooks(req, res) {
-  res.set("Cache-control", "public, no-cache");
   res.send(model.getAll());
 }
 
 function getBook(req, res) {
   const id = req.params.id;
-  res.send(model.getOne(id));
+  res.json(model.getOne(id));
 }
 
 function postBook(req, res) {
