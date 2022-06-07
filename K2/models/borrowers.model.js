@@ -34,7 +34,6 @@ function getOne(id) {
   console.log(book);
   borrowers = initBorrowers(query);
   book = { borrowedBooks: book };
-  borrowers.push(book);
   return borrowers;
 }
 
@@ -42,7 +41,7 @@ function addOne(data) {
   const query = `
   ${insertRow} (id, first_name, last_name) 
   VALUES(?, ?, ?)`;
-  db.run(query, [uuid.v4(), data[0].first_name, data[0].last_name]);
+  db.run(query, [uuid.v4(), data.first_name, data.last_name]);
   borrowers = initBorrowers(fetchTable);
   return borrowers;
 }
@@ -59,7 +58,7 @@ function updateOne(id, data) {
   ${updateRow}
     SET first_name = ?, last_name = ?,   
     WHERE id=?`;
-  db.run(query, [data[0].first_name, data[0].last_name, id]);
+  db.run(query, [data.first_name, data.last_name, id]);
   borrowers = initBorrowers(fetchTable);
   return borrowers;
 }
@@ -73,11 +72,11 @@ function patchOne(id, data) {
       [data, id]
     );
   }
-  if (data[0].first_name !== undefined) {
-    updatePart("first_name", data[0].first_name);
+  if (data.first_name !== undefined) {
+    updatePart("first_name", data.first_name);
   }
-  if (data[0].last_name !== undefined) {
-    updatePart("last_name", data[0].last_name);
+  if (data.last_name !== undefined) {
+    updatePart("last_name", data.last_name);
   }
   borrowers = initBorrowers(fetchTable);
   return borrowers;

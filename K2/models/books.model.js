@@ -31,11 +31,11 @@ function addOne(data) {
   VALUES(?, ?, ?, ?, ?, ?)`;
   db.run(query, [
     uuid.v4(),
-    data[0].title,
-    data[0].author,
-    data[0].isbn,
-    data[0].publication_date,
-    data[0].binding,
+    data.title,
+    data.author,
+    data.isbn,
+    data.publication_date,
+    data.binding,
   ]);
   books = initBooks(fetchTable);
   return books;
@@ -61,12 +61,12 @@ function updateOne(id, data) {
       borrower_id = ?    
     WHERE id=?`;
   db.run(query, [
-    data[0].title,
-    data[0].author,
-    data[0].isbn,
-    data[0].publication_date,
-    data[0].binding,
-    data[0].borrower_id,
+    data.title,
+    data.author,
+    data.isbn,
+    data.publication_date,
+    data.binding,
+    data.borrower_id,
     id,
   ]);
   books = initBooks(fetchTable);
@@ -74,38 +74,42 @@ function updateOne(id, data) {
 }
 
 function patchOne(id, data) {
-  if (data[0].title !== undefined) {
+  console.log(data.title)
+  if (data.title !== undefined) {
     column = "title";
-    insert = data[0].title;
+    insert = data.title;
   }
-  if (data[0].author !== undefined) {
+  if (data.author !== undefined) {
     column = "author";
-    insert = data[0].author;
+    insert = data.author;
   }
-  if (data[0].isbn !== undefined) {
+  if (data.isbn !== undefined) {
     column = "isbn";
-    insert = data[0].isbn;
+    insert = data.isbn;
   }
-  if (data[0].publication_date !== undefined) {
+  if (data.publication_date !== undefined) {
     column = "publication_date";
-    insert = data[0].publication_date;
+    insert = data.publication_date;
   }
-  if (data[0].binding !== undefined) {
+  if (data.binding !== undefined) {
     column = "binding";
-    insert = data[0].binding;
+    insert = data.binding;
   }
-  if (data[0].borrower_id !== undefined) {
+  if (data.borrower_id !== undefined) {
     column = "borrower_id";
-    insert = data[0].borrower_id;
+    insert = data.borrower_id;
   }
+  
   db.run(
     `${updateRow}
     SET ${column} = ?
     WHERE id = ?`,
     [insert, id]
   );
+  
   books = initBooks(fetchTable);
   return books;
+  
 }
 
 module.exports = {
