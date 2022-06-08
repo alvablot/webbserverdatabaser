@@ -1,43 +1,54 @@
+const { query } = require("express");
 const uuid = require("uuid");
 const db = require("../database.js");
 let borrowers;
 const fetchBooksTable = "SELECT * FROM books";
 const fetchTable = "SELECT * FROM borrowers";
-const deleteRow = "DELETE FROM borrowers ";
+const deleteRow = "DELETE FROM borrowers";
 const insertRow = "INSERT INTO borrowers";
 const updateRow = "UPDATE borrowers";
 
 function initBorrowers(query) {
-  db.all(query, (err, rows) => {
-    borrowers = rows;
+  return new Promise((resolve, reject) => {
+    db.all(query, (err, rows) => {
+      resolve(rows);
+    });
   });
-  return borrowers;
 }
 
-function getAll() {
+function getBorrower(query) {
+  return new Promise((resolve, reject) => {
+    db.get(query, (err, rows) => {
+      resolve(rows);
+    });
+  });
+}
+
+async function getAll() {
   const query = fetchTable;
-  borrowers = initBorrowers(query);
-  return borrowers;
+  const result = await initBorrowers(query);
+  return result;
 }
 
-let book;
-function borrowedBooks(id) {
-  db.all(`SELECT title FROM books WHERE borrower_id = ${id}`, (err, rows) => {
-    book = rows;
-  });
-  return book;
+async function borrowedBooks(id) {
+  const query = `SELECT * FROM books WHERE borrower_id = '${id}'`;
+  const result = await initBorrowers(query);
+  return result;
 }
 
-function getOne(id) {
-  const query = `${fetchTable} WHERE id = ${id}`;
-  book = borrowedBooks(id);
-  console.log(book);
-  borrowers = initBorrowers(query);
-  book = { borrowedBooks: book };
-  return borrowers;
+async function getOne(id) {
+  const query = `${fetchTable} WHERE id = '${id}'`;
+  let borrower = await getBorrower(query);
+  let books = await borrowedBooks(id);
+  books = Object.assign(books)
+  result = {
+    borrower,
+    books,
+  };
+  return result;
 }
 
-function addOne(data) {
+async function addOne(data) {
   const query = `
   ${insertRow} (id, first_name, last_name) 
   VALUES(?, ?, ?)`;
@@ -46,13 +57,13 @@ function addOne(data) {
   return borrowers;
 }
 
-function deleteOne(id) {
+async function deleteOne(id) {
   db.run(`${deleteRow} WHERE id = ?`, id, (err) => {});
   borrowers = initBorrowers(fetchTable);
   return borrowers;
 }
 
-function updateOne(id, data) {
+async function updateOne(id, data) {
   // PUT
   var query = `
   ${updateRow}
@@ -63,7 +74,7 @@ function updateOne(id, data) {
   return borrowers;
 }
 
-function patchOne(id, data) {
+async function patchOne(id, data) {
   function updatePart(col, data) {
     db.run(
       `${updateRow}
@@ -78,7 +89,7 @@ function patchOne(id, data) {
   if (data.last_name !== undefined) {
     updatePart("last_name", data.last_name);
   }
-  borrowers = initBorrowers(fetchTable);
+  const borrowers = await initBorrowers(fetchTable);
   return borrowers;
 }
 

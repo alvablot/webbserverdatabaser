@@ -6,41 +6,44 @@ const port = 4000;
 
 const model = require("../models/books.model");
 
-function getBooks(req, res) {
-  res.send(model.getAll());
+async function getBooks(req, res) {
+  const result = await model.getAll();
+  res.json(result);
 }
 
-function getBook(req, res) {
+async function getBook(req, res) {
   const id = req.params.id;
-  res.json(model.getOne(id));
+  const result = await model.getOne(id);
+  res.json(result);
 }
 
-function postBook(req, res) {
+async function postBook(req, res) {
   let data = req.body;
-  res.send(model.addOne(data));
+  const result = await model.addOne(data);
+  res.json(result);
 }
 
-function deleteBook(req, res) {
+async function deleteBook(req, res) {
   const id = req.params.id;
-  //console.log(id)
-  res.send(model.deleteOne(id));
+  const result = await model.deleteOne(id);
+  res.json(result);
 }
 
-function putBook(req, res) {
+async function putBook(req, res) {
   const id = req.params.id;
   const data = req.body;
   //console.log(data);
-  const result = model.updateOne(id, data);
-  if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
-  res.send(result);
+  const result = await model.updateOne(id, data);
+  //if (result === 404) return res.status(404).json({ error: "Bok finns ej" });
+  res.json(result);
 }
 
-function patchBook(req, res) {
+async function patchBook(req, res) {
   const id = req.params.id;
   const data = req.body;
-  const result = model.patchOne(id, data);
-  if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
-  res.send(result);
+  const result = await model.patchOne(id, data);
+  //if (result === 404) return res.status(404).json({ error: "Bok finns ej" });
+  res.json(result);
 }
 
 module.exports = {

@@ -7,26 +7,26 @@ const insertRow = "INSERT INTO books";
 const updateRow = "UPDATE books";
 
 function initBooks(query) {
-  db.all(query, (err, rows) => {
-    books = rows;
+  return new Promise((resolve, reject) => {
+    db.all(query, (err, rows) => {
+      resolve(rows);
+    });
   });
-  return books;
 }
-
-function getAll() {
+async function getAll() {
   const query = fetchTable;
-  const result = initBooks(query);
+  const result = await initBooks(query);
+  //console.log(result)
   return result;
 }
 
- function getOne(id,) {
+async function getOne(id) {
   const query = `${fetchTable} WHERE id = '${id}'`;
-  const books = initBooks(query);
-  //console.log(query);
-  return books;
+  const result  = await initBooks(query);
+  return result;
 }
 
-function addOne(data) {
+async function addOne(data) {
   const query = `
   ${insertRow} (id, title, author, isbn, publication_date, binding) 
   VALUES(?, ?, ?, ?, ?, ?)`;
@@ -38,19 +38,19 @@ function addOne(data) {
     data.publication_date,
     data.binding,
   ]);
-  books = initBooks(fetchTable);
-  return books;
+  const result = await initBooks(fetchTable);
+  return result;
 }
 
-function deleteOne(id) {
+async function deleteOne(id) {
   db.run(`${deleteRow} WHERE id = ?`, id, (err) => {});
-  books = initBooks(fetchTable);
+  const result  = await initBooks(fetchTable);
   return books;
 }
 
 let column;
 let insert;
-function updateOne(id, data) {
+async function updateOne(id, data) {
   // PUT
   var query = `${updateRow} 
     SET 
@@ -70,11 +70,11 @@ function updateOne(id, data) {
     data.borrower_id,
     id,
   ]);
-  books = initBooks(fetchTable);
-  return books;
+  const result  = await initBooks(fetchTable);
+  return result;
 }
 
-function patchOne(id, data) {
+async function patchOne(id, data) {
   //.log(data.title);
   if (data.title !== undefined) {
     column = "title";
@@ -108,8 +108,8 @@ function patchOne(id, data) {
     [insert, id]
   );
 
-  books = initBooks(fetchTable);
-  return books;
+  const result  = initBooks(fetchTable);
+  return result;
 }
 
 module.exports = {

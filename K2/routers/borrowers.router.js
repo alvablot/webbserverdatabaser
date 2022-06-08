@@ -5,7 +5,7 @@ const borrowersRouter = express.Router();
 //const morgan = require("morgan");
 //borrowersRouter.use(morgan("dev"));
 
-borrowersRouter.get("/borrowers", borrowersController.getBorrowers);
+const test = borrowersRouter.get("/borrowers", borrowersController.getBorrowers);
 borrowersRouter.get("/borrowers/:id", borrowersController.getBorrower);
 borrowersRouter.post("/borrowers", borrowersController.postBorrower);
 borrowersRouter.delete("/borrowers/:id", borrowersController.deleteBorrower);

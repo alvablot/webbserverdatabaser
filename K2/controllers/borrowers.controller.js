@@ -5,42 +5,47 @@ const port = 4000;
 //console.log(db);
 
 const model = require("../models/borrowers.model");
+const model2 = require("../models/books.model");
 
-function getBorrowers(req, res) {
-  res.send(model.getAll());
+async function getBorrowers(req, res) {
+  const result = await model.getAll();
+  res.send(result);
 }
 
-function getBorrower(req, res) {
+async function getBorrower(req, res) {
   const id = req.params.id;
-  res.send(model.getOne(id));
+  result = await model.getOne(id);
+  res.send(result);
 }
 
-function postBorrower(req, res) {
+async function postBorrower(req, res) {
   let data = req.body;
-  res.send(model.addOne(data));
+  const result = await model.addOne(data);
+  //console.log(result);
+  res.json(result);
 }
 
-function deleteBorrower(req, res) {
+async function deleteBorrower(req, res) {
   const id = req.params.id;
-  //console.log(id)
-  res.send(model.deleteOne(id));
+  result = await model.deleteOne(id);
+  res.json(result);
 }
 
-function putBorrower(req, res) {
+async function putBorrower(req, res) {
   const id = req.params.id;
   const data = req.body;
   //console.log(data);
-  const result = model.updateOne(id, data);
+  const result = await model.updateOne(id, data);
   //if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
-  res.send(result);
+  res.json(result);
 }
 
-function patchBorrower(req, res) {
+async function patchBorrower(req, res) {
   const id = req.params.id;
   const data = req.body;
-  const result = model.patchOne(id, data);
- // if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
-  res.send(result);
+  const result = await model.patchOne(id, data);
+  // if (result === 404) return res.status(404).json({ error: "Bil finns ej" });
+  res.json(result);
 }
 
 module.exports = {
