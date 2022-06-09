@@ -16,7 +16,6 @@ function initBooks(query) {
 async function getAll() {
   const query = fetchTable;
   const result = await initBooks(query);
-  //console.log(result)
   return result;
 }
 
@@ -27,16 +26,17 @@ async function getOne(id) {
 }
 
 async function addOne(data) {
+  let { title, author, isbn, publication_date, binding} = data;
   const query = `
   ${insertRow} (id, title, author, isbn, publication_date, binding) 
   VALUES(?, ?, ?, ?, ?, ?)`;
   db.run(query, [
     uuid.v4(),
-    data.title,
-    data.author,
-    data.isbn,
-    data.publication_date,
-    data.binding,
+    title,
+    author,
+    isbn,
+    publication_date,
+    binding,
   ]);
   const result = await initBooks(fetchTable);
   return result;
@@ -51,7 +51,7 @@ async function deleteOne(id) {
 let column;
 let insert;
 async function updateOne(id, data) {
-  // PUT
+  let { title, author, isbn, publication_date, binding, borrower_id } = data;
   var query = `${updateRow} 
     SET 
       title = ?, 
@@ -62,12 +62,12 @@ async function updateOne(id, data) {
       borrower_id = ?    
     WHERE id=?`;
   db.run(query, [
-    data.title,
-    data.author,
-    data.isbn,
-    data.publication_date,
-    data.binding,
-    data.borrower_id,
+    title,
+    author,
+    isbn,
+    publication_date,
+    binding,
+    borrower_id,
     id,
   ]);
   const result  = await initBooks(fetchTable);
