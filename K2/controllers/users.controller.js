@@ -10,24 +10,45 @@ async function getUsers(req, res) {
 }
 
 async function getUser(req, res) {
-  const id = req.params.id;
-  result = await model.getOne(id);
+  result = await model.getOne();
+  if (result === 403) return res.status(403).send("Du är inte inloggad");
   res.json(result);
 }
 
 async function loginUser(req, res) {
+  const url = req.url;
   const id = req.params.id;
   let data = req.body;
-  result = await model.login(id, data);
-  if (result === 400) return res.status(400).send("Du måste skicka med email och lösenord");
+  result = await model.login(id, data, url);
+  if (result === 400)
+    return res.status(400).send("Du måste skicka med email och lösenord");
   if (result === 404) return res.status(404).send("Fel användarnamn/lösenord");
   res.json(result);
+}
+
+async function lendUser(req, res) {
+  const bookId = req.body.book_id;
+  let result = await model.lendOne(bookId);
+  if (result === 403) return res.status(403).send("Du måste vara inloggad");
+  if (result === 404) return res.status(404).send("Inget match på bok-id");
+  res.json(result);
+}
+
+async function returnUser(req, res) {
+  const bookId = req.body.book_id;
+  
+  let result = await model.returnOne(bookId);
+  if (result === 403) return res.status(403).send("Du måste vara inloggad");
+  if (result === 404) return res.status(404).send("Inget match på bok-id");
+  res.json(result)
+  ;
 }
 
 async function postUser(req, res) {
   let data = req.body;
   let result = await model.addOne(data);
-  if (result === 400) return res.status(400).send("Du måste skicka med all input");
+  if (result === 400)
+    return res.status(400).send("Du måste skicka med all input");
   if (result === 409) return res.status(409).send("Användaren finns redan");
   res.json(result);
 }
@@ -50,6 +71,8 @@ module.exports = {
   getUser,
   getUsers,
   loginUser,
+  lendUser,
+  returnUser,
   deleteUser,
   postUser,
   patchUser,

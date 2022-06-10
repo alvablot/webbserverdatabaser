@@ -1,1032 +1,450 @@
-Thu Jun 09 2022 19:45:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {} GET//books/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 19:59:47 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:00:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:01:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:05:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:06:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:08:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:08:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:17:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:17:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:17:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:18:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:18:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:19:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:19:25 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:19:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:19:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cpcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:21:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:21:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:21:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:21:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:21:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:22:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:22:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:23:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:23:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:23:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:28:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:28:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:28:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:28:25 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:28:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.asdcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:29:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.asdcp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:29:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:29:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 20:30:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:32:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:33:17 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:33:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:35:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:36:47 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:37:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:38:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:38:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:38:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cdddddddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:39:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cdddddddddddp@cp.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 409
-    
-Thu Jun 09 2022 20:39:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cdddddddddddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:40:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/register/ on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 20:54:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "first_name": "Kula",
-  "last_name": "KNwd",
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:25 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST///auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:56:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:57:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:54 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:58:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 20:59:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:00:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:00:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:00:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:00:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:00:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:01:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:02:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:02:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:03:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:03:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:04:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:08:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp"
-} POST//auth/login on: http://localhost:4000 status: 400
-    
-Thu Jun 09 2022 21:09:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:11:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:11:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:15:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:17:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:17:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:17:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:17:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:19:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:19:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:19:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cd@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:19:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:20:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:22:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:23:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "66"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:23:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "66"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:25:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "66"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:25:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "66"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:25:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:35:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:35:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "66"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:37:45 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
-Thu Jun 09 2022 21:37:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpccdddddcc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:38:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpccdddddcc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:38:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpccdddddcc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 404
-    
-Thu Jun 09 2022 21:38:54 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
-Body {
-  "email": "cddp@cpcccc.cp",
-  "password": "666"
-} POST//auth/login on: http://localhost:4000 status: 200
-    
+Thu Jun 09 2022 21:44:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:44:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:45:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/register/ on: http://localhost:4000 status: 409 
+Thu Jun 09 2022 21:45:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/register/ on: http://localhost:4000 status: 409 
+Thu Jun 09 2022 21:45:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/register/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:48:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:49:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:49:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:49:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:49:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:49:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:50:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:50:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:50:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:51:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:52:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 21:52:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 21:55:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:07:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:07:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:10:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:10:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:11:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:12:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:12:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:12:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:12:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:12:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Thu Jun 09 2022 22:14:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 PATCH//users/3 on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:15:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:15:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:15:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:15:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:15:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:15:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 400 
+Thu Jun 09 2022 22:16:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:16:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:19:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:19:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:19:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:19:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:20:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 22:21:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:21:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:23:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:28:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:31:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 22:31:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 22:31:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:32:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 22:32:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:33:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 22:33:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:35:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:44:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:45:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:45:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:45:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:45:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:45:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:48:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:48:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:52:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:52:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:54:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 22:54:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:15:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:15:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:15:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:15:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:16:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:16:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:16:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:17:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:17:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:19:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:21:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:28:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:28:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:28:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:30:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:32:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/register/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:33:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:34:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:34:17 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:35:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:37:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:39:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:40:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:40:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:41:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:41:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:41:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:41:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:41:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:42:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:43:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:43:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:51:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:51:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:53:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:53:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:53:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:54:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:54:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:54:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:55:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:55:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:55:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:56:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:56:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:56:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:56:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:57:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:57:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:57:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:57:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:57:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:57:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:58:45 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:58:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:59:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Thu Jun 09 2022 23:59:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Thu Jun 09 2022 23:59:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 00:00:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:00:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:00:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:00:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:01:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:01:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:01:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:07:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:07:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:07:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:07:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:07:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:17 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:08:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:09:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:09:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:09:54 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:09:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:09:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:10:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 00:10:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 00:10:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:10:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:16:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:19:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:25:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:27:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:27:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:27:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/register/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:27:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:28:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:28:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:28:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:29:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:30:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:38:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:38:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:38:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:38:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:58 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:39:59 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:40:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:40:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:40:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:43:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:43:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:45:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:46:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:46:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 00:46:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:47:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:47:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:47:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:47:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:47:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:48:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:48:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:48:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:48:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:48:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:54:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 00:54:55 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:55:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:55:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:55:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 00:55:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:00:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:00:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:00:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:00:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:00:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:01:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:01:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:02:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:02:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:02:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:02:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:04:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:04:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:04:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:04:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:06:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:06:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:06:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:06:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:06:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:06:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:12:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:12:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:12:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:12:54 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:13:11 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:13:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:13:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:13:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:14:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:14:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:16:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:16:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:17:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:17:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:17:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:18:05 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:18:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:18:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:18:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:18:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:20:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:20:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:20:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:20:54 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:21:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:22:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:22:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:22:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:22:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:22:53 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:23:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:23:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:23:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:23:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:26:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//users/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:27:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:27:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:28:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:30:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:30:08 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:30:16 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:02 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:31:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:50 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:33:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:34:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:34:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:34:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:34:52 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:34:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:35:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:36:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:36:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:36:10 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:37:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:37:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:37:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:38:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:38:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:38:40 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:39:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:39:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:39:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:41:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:41:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:41:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:41:45 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:41:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:41:47 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:42:37 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:42:41 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:42:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:42:45 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:26 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:43:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:44:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:44:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:45:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:45:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:45:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:45:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:46:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:23 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:46:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:46:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:46:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:47:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//books/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:48:04 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:48:09 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:48:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:48:13 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:48:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:35 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:48:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:49:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:49:03 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:49:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:19 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:49:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 01:50:34 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:50:45 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:50:49 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:50:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:53:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:53:31 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:53:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:54:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:54:30 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:54:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:54:57 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:55:01 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:55:29 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:55:33 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:55:36 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:56:12 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 403 
+Fri Jun 10 2022 01:56:15 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:56:17 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:57:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:57:21 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:57:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:57:46 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:57:48 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 01:59:00 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:00:32 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:00:39 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:00:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:00:56 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:01:14 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:01:20 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:01:38 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:01:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:01:51 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 404 
+Fri Jun 10 2022 02:02:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:02:42 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:02:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:02:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:02:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 GET//me/ on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:05:18 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//auth/login on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:05:22 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/lend on: http://localhost:4000 status: 200 
+Fri Jun 10 2022 02:05:28 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 POST//users/return on: http://localhost:4000 status: 200 

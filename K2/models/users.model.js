@@ -3,13 +3,17 @@ const md5 = require("md5");
 const jwt = require("jsonwebtoken");
 const db = require("../database.js");
 let users;
+let token = false;
+let activeUser = {};
 const fetchBooksTable = "SELECT * FROM books";
 const fetchTable = "SELECT * FROM users";
+const fetchBooks = "SELECT * FROM books";
 const deleteRow = "DELETE FROM users";
 const insertRow = "INSERT INTO users";
 const updateRow = "UPDATE users";
+const bookUserId = "UPDATE books";
 
-function initUsers(query) {
+function initTable(query) {
   return new Promise((resolve, reject) => {
     db.all(query, (err, rows) => {
       resolve(rows);
@@ -27,17 +31,19 @@ function getUser(query) {
 
 async function getAll() {
   const query = fetchTable;
-  const result = await initUsers(query);
+  const result = await initTable(query);
   return result;
 }
 
 async function borrowedBooks(id) {
   const query = `SELECT * FROM books WHERE user_id = '${id}'`;
-  const result = await initUsers(query);
+  const result = await initTable(query);
   return result;
 }
 
-async function getOne(id) {
+async function getOne() {
+  if (!activeUser.id) return 403;
+  const id = activeUser.id;
   const query = `${fetchTable} WHERE id = '${id}'`;
   let user = await getUser(query);
   let books = await borrowedBooks(id);
@@ -60,7 +66,7 @@ async function addOne(data) {
   }
   const query = `${insertRow} (id, first_name, last_name, email, password)  VALUES(?, ?, ?, ?, ?)`;
   db.run(query, [uuid.v4(), first_name, last_name, email, md5(password)]);
-  users = initUsers(fetchTable);
+  users = initTable(fetchTable);
   return users;
 }
 
@@ -78,9 +84,9 @@ async function login(id, data) {
   );
   if (checkPassword === undefined) return 404;
 
+  //////// INLOGGAD
   console.log("Right password");
-
-  const token = jwt.sign(
+  token = jwt.sign(
     {
       id: existingUser.id,
       //username: existingUser.username,
@@ -88,12 +94,47 @@ async function login(id, data) {
     },
     process.env.SECRET_KEY
   );
+  activeUser = {
+    id: existingUser.id,
+    password: hashedPassword,
+  };
   return token;
+}
+
+async function lendOne(bookId) {
+  const id = activeUser.id;
+  if (!token) return 403;
+  if (!bookId) return 404;
+  function updatePart(col, data) {
+    db.run(
+      `${bookUserId}
+      SET ${col} = ?
+      WHERE id = ?`,
+      [id, bookId]
+    );
+  }
+  updatePart("user_id", id);
+
+  const user = getOne(id);
+  return user;
+}
+
+async function returnOne(bookId) {
+  const id = activeUser.id;
+  if (!token) return 403;
+  if (!bookId) return 404;
+  db.run(`
+  UPDATE books SET user_id = ?
+    WHERE id = ?`,
+    ["NULL", bookId]
+  );
+  const user = getOne(id);
+  return user;
 }
 
 async function deleteOne(id) {
   db.run(`${deleteRow} WHERE id = ?`, id, (err) => {});
-  users = initUsers(fetchTable);
+  users = initTable(fetchTable);
   return users;
 }
 
@@ -117,7 +158,7 @@ async function patchOne(id, data) {
   if (data.last_name !== undefined) {
     updatePart("last_name", data.last_name);
   }
-  const users = await initUsers(fetchTable);
+  const users = await initTable(fetchTable);
   return users;
 }
 
@@ -127,6 +168,8 @@ module.exports = {
   getOne,
   addOne,
   login,
+  lendOne,
+  returnOne,
   deleteOne,
   updateOne,
   patchOne,

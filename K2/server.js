@@ -10,13 +10,10 @@ const auth = require("./middlewares/auth");
 
 const log = (req, res, next) => {
   res.on("finish", () => {
-    let info = JSON.stringify(req.body, null, 2);
+    //let info = JSON.stringify(req.body, null, 2);
     let now = new Date();
     let { ip, method, url, protocol, hostname } = req;
-    let logRow = `${now} IP: ${ip} 
-Body ${info} ${method}/${url} on: ${protocol}://${hostname}:${port} status: ${res.statusCode}
-    
-`;
+    let logRow = `${now} IP: ${ip} ${method}/${url} on: ${protocol}://${hostname}:${port} status: ${res.statusCode} \n`;
     fs.writeFile("./log.txt", logRow, { flag: "a+" }, (err) => {
       if (err) throw err;
       console.log("Log updated");
