@@ -50,7 +50,7 @@ const db = new sqlite3.Database("./data/books_db.db", (error) => {
         "ISBN-nummer",
         "1971-01-01",
         "Pocket",
-        null,
+        "NULL",
       ]);
   });
 

@@ -1,0 +1,25 @@
+Thu Jun 09 2022 19:42:27 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:06 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:07 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:43 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  Thu Jun 09 2022 19:43:44 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
+  Body {} GET//books/ on: http://localhost:4000 status: 200
+      
+  
