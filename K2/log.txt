@@ -13,3 +13,24 @@ Body {
 Fri Jun 10 2022 15:31:24 GMT+0200 (centraleuropeisk sommartid) IP: ::ffff:127.0.0.1 
 Body {} GET//boo on: http://localhost:[object Object] status: 404
     
+Sat Jun 11 2022 14:59:05 GMT+0200 (Central European Summer Time) IP: ::ffff:127.0.0.1 
+Body {} GET//users/ on: http://localhost:[object Object] status: 200
+    
+Sat Jun 11 2022 15:04:55 GMT+0200 (Central European Summer Time) IP: ::ffff:127.0.0.1 
+Body {} GET//users/ on: http://localhost:[object Object] status: 200
+    
+Sat Jun 11 2022 15:13:03 GMT+0200 (Central European Summer Time) IP: ::ffff:127.0.0.1 
+Body {} GET//users/ on: http://localhost:[object Object] status: 200
+    
+Sat Jun 11 2022 15:13:58 GMT+0200 (Central European Summer Time) IP: ::ffff:127.0.0.1 
+Body {
+  "title": "lasiaihaidiads",
+  "author": "Riffeg",
+  "isbn": "9780450537370",
+  "publication_date": "1991-01-01",
+  "binding": "sdfsdfsdsdsdfsdfsdf"
+} POST//books/ on: http://localhost:[object Object] status: 200
+    
+Sat Jun 11 2022 15:19:54 GMT+0200 (Central European Summer Time) IP: ::ffff:127.0.0.1 
+Body {} GET//books/664e4448-b3e2-4a2b-b1fd-6ae524092e3b on: http://localhost:[object Object] status: 200
+    
